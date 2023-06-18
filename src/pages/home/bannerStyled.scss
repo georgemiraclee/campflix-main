@@ -1,0 +1,73 @@
+div.banner {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  position: relative;
+  background: var(--BG_COLOR_0);
+  border-radius: 5px;
+  width: 100%;
+  aspect-ratio: 10 / 3;
+  left: 0;
+  transition: 1s;
+  overflow: hidden;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+
+  & > div.banner-info-container {
+    width: 40%;
+    height: 100%;
+    background: var(--BG_COLOR_0);
+    margin: 10px 0px 10px 10px;
+    display: flex;
+    position: absolute;
+
+    & > div.banner-info {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: 10%;
+      left: 8%;
+      padding-inline-end: 20%;
+
+      & > h1.banner-title {
+        font-size: 2.5rem;
+        color: var(--TEXT_COLOR_0);
+        margin-bottom: 10px;
+      }
+
+      & > p.banner-genres {
+        font-size: 1.5rem;
+        color: var(--TEXT_COLOR_2);
+        margin-bottom: 10px;
+      }
+
+      & > p.banner-synopsis {
+        font-size: 1.5rem;
+        color: var(--TEXT_COLOR_1);
+        margin-bottom: 10px;
+        line-height: 2.5rem;
+      }
+    }
+  }
+
+  & > div.banner-gradient {
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(to right, var(--BG_COLOR_0), rgba(0, 0, 0, 0));
+    position: absolute;
+    top: 0;
+    left: calc(40% + 10px);
+    z-index: 1;
+  }
+
+  & > img.banner-image {
+    width: 60%;
+    min-height: 100%;
+    object-fit: cover;
+    border-radius: 0 5px 5px 0;
+    padding-left: 10px;
+    display: block;
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --ORANGE_COLOR: #e04c1f;
+  --BG_GRADIENT_0: linear-gradient(to bottom, #9dfbd7, #80c4f7 1000px);
+  --CARD_GRADIENT: #000000;
+  --BG_COLOR_0: #94e4f2;
+  --BG_COLOR_1: #7a5dca;
+  --BG_COLOR_2: #ae91dab7;
+  --TEXT_COLOR_0: #ffffff;
+  --TEXT_COLOR_1: rgba(255, 255, 255, 0.8);
+  --TEXT_COLOR_2: rgba(255, 255, 255, 0.6);
+  --TEXT_COLOR_3: #dadada;
+  --TEXT_COLOR_4: #909999;
+  --TEXT_COLOR_5: #f9f9f9;
+  --TEXT_LINK_COLOR: #e04c1f;
+  --TEXT_BTN_COLOR: #e04c1f;
+}
+
+div.app-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: absolute;
+  background: var(--BG_GRADIENT_0);
+}
